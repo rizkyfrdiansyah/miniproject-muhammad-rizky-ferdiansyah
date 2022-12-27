@@ -1,6 +1,7 @@
 import "./App.css";
-import { Hasil, ListCategories, NavbarComponent } from "./components/index";
+import { Hasil, ListCategories, Menus, NavbarComponent } from "./components/index";
 import { Col, Container, Row } from "react-bootstrap";
+import { API_URL } from "./utils/constants";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
                 <strong>Daftar Produk</strong>
               </h4>
               <hr />
+              <Row>
+                <Menus />
+              </Row>
             </Col>
             <Hasil />
           </Row>
